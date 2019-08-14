@@ -6,6 +6,8 @@ Just commit when you have a change you want to share, we won't do pull requests 
 
 I will setup travis cli so that it auto builds to github pages so everyone can see how it is progressing without installing
 
+if you need to add new packages just npm install them, make sure you are removing things you don't need tho
+
 ## 🛠 Usage
 
 - Write all your ES2015+ Javascript code in `src/js` and SCSS styling in `src/style`. Store static assets in `src/static`. Organize HTML files the way you like.
