@@ -41,7 +41,7 @@ let canAnimation = anime({
     targets: ".can",
     opacity: 100,
     translateY: 400,
-    easeing: "easeInBounce",
+    easeing: "easeOutBounce",
     duration: 6000,
     autoplay: false
 });
