@@ -1,14 +1,82 @@
 @import "~bootstrap/scss/bootstrap";
 
+// Most of this should be fine to change
+// But be carefull and check the animation because sometimes it might break
+
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+    position: absolute;
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-basis: 100vh;
 }
 
-img {
-  display: block;
-  width: 100vw;
-  margin: 50px auto;
+$canSize: 5%;
+
+.animation-container {
+    background-color: lightseagreen;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    svg {
+        width: 100vw;
+        height: 100vh;
+        .can {
+            transform-origin: 50% 100%;
+            width: $canSize;
+            height: $canSize;
+            position: absolute;
+            x: 50% - ($canSize / 2);
+            y: 50;
+        }
+    }
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+$planeSize: 10vw;
+
+.plane {
+    transform-origin: center;
+    position: absolute;
+    width: $planeSize;
+    height: $planeSize;
+    top: -$planeSize / 2;
+    left: -$planeSize / 2;
+    img {
+        width: 100%;
+        transform: rotate(-90deg);
+    }
+}
+
+.title-text {
+    font-size: 6em;
+}
+
+.test {
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    padding: 1%;
+    .text-box {
+        margin: 1%;
+        padding: 1%;
+        background-color: white;
+        width: 20vw;
+        height: 20vw;
+        border: solid 1px red;
+        h5 {
+            text-align: center;
+        }
+    }
 }
