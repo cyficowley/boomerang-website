@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title> Boomerang </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> Boomerang </title>
 <link href="main.css" rel="stylesheet"></head>
 
 <body>
-  <h1>Yo waddup boomers</h1>
-  <img src="static/plane.png"/>
-  <div class="container">
-    <div class="col-lg-6">dank</div>
-    <div class="col-lg-6">yeet</div>
-  </div>
+    <div class="animation-container">
+        <svg viewBox="0 0 1000 500">
+            <!--
+            These paths can be changed if wanted
+            The can is dropped after the first path finishes
+            The Title comes in after the second path finishes
+            -->
+            <path id="path1" fill="none" stroke="" d="M 1050 250 C 700 250 750 200 550 250 C 350 300 350 50 500 50"/>
+            <path id="path2" fill="none" stroke="" d="M 500 50 C 650 50 650 300 450 250 C 250 200 300 250 100 250 C 0 250 0 350 100 350"/>
+            <path id="path3" fill="none" stroke="" d="M 100 350 L 1050 350"/>
+            <image class="can" xlink:href="static/can.svg" style="opacity: 0" onclick="smoothScroll(document.getElementsByClassName('test')[0]);"/>
+            <text class="title-text" text-anchor="middle" x="500" y="-50">BOOMERANG</text>
+        </svg>
+        <div class="plane">
+            <img src="static/plane.svg"/>
+        </div>
+    </div>
+    <div class="test">
+        <div class="text-box">
+            <h5>South Text</h5>
+        </div>
+        <div class="text-box">
+            <h5>About Us 2 Baby</h5>
+        </div>
+    </div>
 <script type="text/javascript" src="app.bundle.js"></script></body>
+
