@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 // Most of this should be fine to change
 // But be carefull and check the animation because sometimes it might break
@@ -42,11 +43,12 @@ $canSize: 5%;
             x: 50% - ($canSize / 2);
             y: 50;
         }
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.144);
     }
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; 
 }
 
 $planeSize: 10vw;
@@ -65,7 +67,9 @@ $planeSize: 10vw;
 }
 
 .title-text {
+    font-family: 'Roboto', sans-serif;
     font-size: 6em;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.171);
 }
 
 .test {
