@@ -3,6 +3,11 @@
 // Most of this should be fine to change
 // But be carefull and check the animation because sometimes it might break
 
+html{
+    width:100%;
+    overflow-x: hidden;
+}
+
 body {
     position: absolute;
     font-family: "Helvetica Neue", sans-serif;
