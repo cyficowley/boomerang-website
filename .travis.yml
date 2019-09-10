@@ -3,12 +3,12 @@ before_install:
   - npm install -g node-gyp
 language: node_js
 node_js:
-  - node
   - lts/*
 install:
   - npm install
 script:
   - npm run build
+  - echo 'booomerang.tk' > ./dist/CNAME
 deploy:
   provider: pages
   skip-cleanup: true
