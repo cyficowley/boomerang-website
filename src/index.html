@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> Boomerang </title>
 </head>
 
@@ -15,23 +16,52 @@
             The can is dropped after the first path finishes
             The Title comes in after the second path finishes
             -->
-            <path id="path1" fill="none" stroke="" d="M 1050 250 C 700 250 750 200 550 250 C 350 300 350 50 500 50"/>
-            <path id="path2" fill="none" stroke="" d="M 500 50 C 650 50 650 300 450 250 C 250 200 300 250 100 250 C 0 250 0 350 100 350"/>
-            <path id="path3" fill="none" stroke="" d="M 100 350 L 1050 350"/>
-            <image class="can" xlink:href="static/can.svg" style="opacity: 0" onclick="smoothScroll(document.getElementsByClassName('test')[0]);"/>
+            <path id="path1" fill="none" stroke="" d="M 1050 250 C 700 250 750 200 550 250 C 350 300 350 50 500 50" />
+            <path id="path2" fill="none" stroke=""
+                d="M 500 50 C 650 50 650 300 450 250 C 250 200 300 250 100 250 C 0 250 0 350 100 350" />
+            <path id="path3" fill="none" stroke="" d="M 100 350 L 1050 350" />
+            <image class="can" xlink:href="static/can.svg" style="opacity: 0"
+                onclick="smoothScroll(document.getElementsByClassName('test')[0]);" />
             <text class="title-text" text-anchor="middle" x="500" y="-50">BOOMERANG</text>
         </svg>
         <div class="plane">
-            <img src="static/plane.svg"/>
+            <img src="static/plane.svg" />
         </div>
     </div>
-    <div class="test">
-        <div class="text-box">
-            <h5>South Text</h5>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Who we are</h3>
+                <p>We are 6 college students who wanted to change the world. We decided the best way to change it was to
+                    make <a href="https://www.amazon.com/Amazon-Prime-Air/b?ie=UTF8&node=8037720011">Prime Air</a> but
+                    worse</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar sollicitudin eros, nec
+                    dignissim eros malesuada mollis. Maecenas non mollis leo. Ut et tincidunt metus. Donec a odio vel
+                    nisi consequat suscipit. Nullam ultricies posuere faucibus. Sed imperdiet maximus lacus sed tempor.
+                    Mauris ac velit id arcu maximus malesuada sodales sit amet sem. Vivamus pellentesque vel nunc eget
+                    molestie. Donec ornare augue sem. Proin et ornare quam. Morbi tellus risus, porttitor vel aliquet
+                    at, feugiat ac tortor.</p>
+            </div>
+            <div class="col-md-6">
+                <img style="width: 100%;" src="static/plane.png" />
+            </div>
         </div>
-        <div class="text-box">
-            <h5>About Us 2 Baby</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>What we do</h3>
+                <p>Build a plane that has yet to fly</p>
+                <p>Idk what to say now give us money plz</p>
+                <p>Morbi turpis ligula, commodo ut justo non, molestie lobortis nunc. Pellentesque quis mollis tortor.
+                    Praesent dapibus augue viverra ante semper, at mollis justo mattis. Etiam ut erat velit. Sed semper
+                    congue facilisis. Suspendisse sodales laoreet nisl, sed tincidunt dolor cursus at. Suspendisse
+                    scelerisque venenatis egestas. Cras ultricies sem non eros dictum, a luctus elit interdum.
+                    Vestibulum eu placerat ante, feugiat hendrerit ligula. Cras laoreet velit a dui elementum, sodales
+                    fringilla urna consectetur. Quisque condimentum purus quis nunc cursus tincidunt. Nullam porta justo
+                    sit amet risus luctus semper. Integer id ipsum non neque aliquam tincidunt. Morbi justo massa,
+                    laoreet id arcu sit amet, iaculis elementum massa.</p>
+            </div>
+
         </div>
     </div>
 </body>
-
