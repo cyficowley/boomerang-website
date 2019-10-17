@@ -2,7 +2,7 @@ import anime from 'animejs';
 
 let path1 = anime.path("#path1");
 
-let developing = true;
+let developing = false;
 
 let speed_factor = 1;
 
